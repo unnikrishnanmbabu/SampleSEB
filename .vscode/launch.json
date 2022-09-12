@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "Flutter (lib\\splashex.dart)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib\\splashex.dart"
+        }
+    ]
+}
