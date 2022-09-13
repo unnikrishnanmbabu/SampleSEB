@@ -43,13 +43,14 @@ class Loginpage extends StatelessWidget {
               width: 100,
               child: ElevatedButton(onPressed:(){
                 Navigator.push(
-          context, MaterialPageRoute(builder: (context) => Homepage()));
+                context, MaterialPageRoute(builder: (context) => Homepage()));
               }, child: Text('GO BACK')
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(top:361.0),
-              child: TextButton(onPressed: (){}, child:Text('Not a user? Register More!!!')),
+              child: TextButton(onPressed: (){Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Homepage()));}, child:Text('Not a user? Register More!!!')),
             )
             ]
             ),         
