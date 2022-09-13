@@ -37,7 +37,10 @@ class Loginpage extends StatelessWidget {
                 border: OutlineInputBorder(
                 borderRadius:BorderRadius.all(Radius.circular(30)),)),),
              ),
-            MaterialButton(onPressed: (){},color: Colors.orange,child: Text('login'),),
+            MaterialButton(onPressed: (){
+              Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Homepage()));
+            },color: Colors.orange,child: Text('login'),),
             SizedBox(
               height: 30,
               width: 100,
