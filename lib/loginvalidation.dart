@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sample/homepage.dart';
 import 'package:sample/listex.dart';
-import 'package:sample/welcome.dart';
+
 
 
 void main() {
@@ -27,9 +27,8 @@ class MyApp extends StatelessWidget {
                 decoration: const InputDecoration(
                     labelText: 'Email',
                     border: OutlineInputBorder()),
-
-                validator: (text) {
-                  if (text == null || !(text.contains('@')) || text.isEmpty) {
+                validator: (username) {
+                  if (username == null || !(username.contains('@')) || username.isEmpty) {
                     return "Enter a valid email address!";
                   }
                   return null;
@@ -42,7 +41,7 @@ class MyApp extends StatelessWidget {
                 decoration: const InputDecoration(
                     labelText: 'Password', border: OutlineInputBorder()),
                 validator: (text) {
-                  if (text == null || !(text.length <= 6) || text.isEmpty) {
+                  if (text == null || !(text.length <= 5) || text.isEmpty) {
                     return "Enter valid password atmost 5 characters!";
                   }
                   return null;

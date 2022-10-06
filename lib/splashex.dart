@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:sample/loginex.dart';
 
@@ -18,11 +17,17 @@ class Mysplash extends StatefulWidget {
 class Mysplashstate extends State<Mysplash> {
   @override
   void initState() {
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 10), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Loginpage()));
     });
   }
+  // void initState() {
+  //   Timer(Duration(seconds: 3), () {
+  //     Navigator.pushReplacement(
+  //         context, MaterialPageRoute(builder: (context) => Loginpage()));
+  //   });
+  //}
 
   @override
   Widget build(BuildContext context) {

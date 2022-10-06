@@ -18,7 +18,7 @@ class Login extends StatelessWidget {
               child: Text('Login to your Account'),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(500, 100, 820, 0),
+              padding: const EdgeInsets.fromLTRB(500, 50, 820, 0),
               child: Text('Email'),
             ),
             Padding(
@@ -43,7 +43,7 @@ class Login extends StatelessWidget {
                               BorderRadius.all(Radius.circular(10))))),
             ),
             Padding(
-              padding: const EdgeInsets.all(50.0),
+              padding: const EdgeInsets.all(20.0),
               child: Container(
                 width: 190,
                 height: 50,
@@ -53,6 +53,10 @@ class Login extends StatelessWidget {
                   shape: StadiumBorder(),backgroundColor: Colors.blue,foregroundColor: Colors.white),
                 child:Text('Login'),),
               ),
+            ),
+             Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: TextButton(onPressed: (){ }, child:Text("Don't have a account? Sign Up")),
             ),
            Image(
               width: 200,height:200,

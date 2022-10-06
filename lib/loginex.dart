@@ -1,12 +1,18 @@
-
 import 'package:flutter/material.dart';
 import 'package:sample/homepage.dart';
+import 'package:sample/login2.dart';
+import 'package:sample/login2.dart';
 
-// void main() {
-//   runApp(Loginpage());
-// }
+void main() {
+  runApp(Loginpage());
+}
 
-class Loginpage extends StatelessWidget {
+class Loginpage extends StatefulWidget {
+  @override
+  State<Loginpage> createState() => _LoginpageState();
+}
+
+class _LoginpageState extends State<Loginpage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,10 +43,10 @@ class Loginpage extends StatelessWidget {
                 border: OutlineInputBorder(
                 borderRadius:BorderRadius.all(Radius.circular(30)),)),),
              ),
-            MaterialButton(onPressed: (){
+            ElevatedButton(onPressed: (){
               Navigator.push(
                 context, MaterialPageRoute(builder: (context) => Homepage()));
-            },color: Colors.orange,child: Text('login'),),
+            },child: Text('login'),),
             SizedBox(
               height: 30,
               width: 100,
@@ -51,9 +57,9 @@ class Loginpage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top:361.0),
+              padding: const EdgeInsets.only(top:345.0),
               child: TextButton(onPressed: (){Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Homepage()));}, child:Text('Not a user? Register More!!!')),
+                context, MaterialPageRoute(builder: (context) => loginone()));}, child:Text('Not a user? Register More!!!')),
             )
             ]
             ),         

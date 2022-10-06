@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sample/homepage.dart';
 import 'package:sample/login.dart';
+import 'package:sample/register.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,10 +22,11 @@ class Mywelcomestate extends State<Mywelcome> {
       child: Center(
         child: Column(children: [
           const Text('Welcome',
-              style: TextStyle(
-                  fontSize: 50,
-                  color: Colors.blue,
-                  fontStyle: FontStyle.italic)),
+              style: TextStyle(fontSize: 50, color: Colors.blue)),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text('"The purpose of our lives is to be HAPPY"'),
+          ),
           Padding(
             padding: const EdgeInsets.all(70.0),
             child: const Image(
@@ -52,7 +53,7 @@ class Mywelcomestate extends State<Mywelcome> {
           ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Homepage()));
+                    MaterialPageRoute(builder: (context) => Myregister()));
               },
               style: ElevatedButton.styleFrom(
                   shape: const StadiumBorder(),
