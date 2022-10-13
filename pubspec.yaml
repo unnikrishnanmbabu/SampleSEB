@@ -37,9 +37,9 @@ dependencies:
   fluttertoast: ^8.0.9
   onboarding: ^3.1.0
   multiselect: ^0.0.7
-  multi_select_flutter: ^4.1.2
-  flutter_multi_select_items: ^0.4.2
-  multi_select_item: ^1.0.3
+  rflutter_alert: ^2.0.4
+  connectivity_plus: ^2.3.9
+  
 
 
 
